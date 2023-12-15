@@ -189,10 +189,12 @@ def on_ui_tabs():
                             label="Upscaler for img2Img",
                         )
 
-                        if cmd_opts.use_textbox_seed:
-                            seed = gr.Textbox(label='Seed', value="", elem_id="replacer_seed", min_width=100)
-                        else:
-                            seed = gr.Number(label='Seed', value=-1, elem_id="replacer_seed", min_width=100, precision=0)
+                        #if cmd_opts.use_textbox_seed:
+                            #seed = gr.Textbox(label='Seed', value="", elem_id="replacer_seed", min_width=100)
+                        #else:
+                            #seed = gr.Number(label='Seed', value=-1, elem_id="replacer_seed", min_width=100, precision=0)
+                            
+                        seed = gr.Number(label='Seed', value=-1, elem_id="replacer_seed", min_width=100, precision=0)
                         
                         random_seed = ToolButton(
                             ui.random_symbol,
