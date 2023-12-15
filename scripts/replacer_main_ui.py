@@ -190,11 +190,6 @@ def on_ui_tabs():
                             choices=[x.name for x in shared.sd_upscalers],
                             label="Upscaler for img2Img",
                         )
-
-                        #if cmd_opts.use_textbox_seed:
-                            #seed = gr.Textbox(label='Seed', value="", elem_id="replacer_seed", min_width=100)
-                        #else:
-                            #seed = gr.Number(label='Seed', value=-1, elem_id="replacer_seed", min_width=100, precision=0)
                             
                         seed = gr.Number(label='Seed', value=-1, elem_id="replacer_seed", min_width=100, precision=0)
                         
@@ -229,7 +224,7 @@ def on_ui_tabs():
 
             with gr.Column():
                 with gr.Row():
-                    img2img_gallery, generation_info, html_info, html_log = \
+                    img2img_gallery, generation_info, html_info, html_info_formatted, html_log = \
                         create_output_panel(EXT_NAME_LOWER)
                     
                 with gr.Row():
