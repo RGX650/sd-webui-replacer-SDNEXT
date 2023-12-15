@@ -230,7 +230,7 @@ def on_ui_tabs():
             with gr.Column():
                 with gr.Row():
                     img2img_gallery, generation_info, html_info, html_log = \
-                        create_output_panel(EXT_NAME_LOWER, getSaveDir())
+                        create_output_panel(EXT_NAME_LOWER)
                     
                 with gr.Row():
                     apply_hires_fix_button = gr.Button("Apply HiresFix")
