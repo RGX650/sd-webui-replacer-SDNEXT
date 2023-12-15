@@ -199,12 +199,12 @@ def on_ui_tabs():
                         seed = gr.Number(label='Seed', value=-1, elem_id="replacer_seed", min_width=100, precision=0)
                         
                         random_seed = ToolButton(
-                            ui.random_symbol,
+                            ui_symbols.random_symbol,
                             elem_id="replacer_random_seed",
                             label='Random seed'
                         )
                         reuse_seed = ToolButton(
-                            ui.reuse_symbol,
+                            ui_symbols.reuse_symbol,
                             elem_id="replacer_reuse_seed",
                             label='Reuse seed'
                         )
